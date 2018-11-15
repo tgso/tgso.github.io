@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TGSO website">
+    <meta name="author" content="Alexandre Stelzig">
+
+    <title>TGSO</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- icon -->
+    <link rel="icon" href="icon.png">
+
+         <!-- social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="brand">TGSO</div>
+    <div class="address-bar">Taiwanese Graduate Student Association of Ottawa <br> Association Taïwanaise des étudiants diplômés d'Ottawa</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">TGSO</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a id="en" href="index.html">Home</a>
+                        <a id="fr" href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a id="en" href="about.html">About</a>
+                        <a id="fr" href="about.html">À propos</a>
+                    </li>
+                    <li>
+                        <a id="en" href="news.html">News</a>
+                        <a id="fr" href="news.html">Nouvelles</a>
+                    </li>
+                    <li>
+                        <a id="en" href="register.html">Register</a>
+                        <a id="fr" href="register.html">Enregistrer</a>
+                    </li>
+                    <li>
+                        <a id="en" href="javascript:toggleLanguage()">Français</a>
+                        <a id="fr" href="javascript:toggleLanguage()">English</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+    
+        <div class="row">
+            <div class="box center">
+                <div id="en" class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Latest
+                        <strong>news</strong>
+                    </h2>
+                    <hr>
+                </div>
+
+                <div id="fr" class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Dernières
+                        <strong>Nouvelles</strong>
+                    </h2>
+                    <hr>
+                </div>
+
+                <div class="col-md-6">
+
+                    <h2 class="intro-text text-center">
+                        <strong>Information</strong>
+                    </h2>
+                    <hr>
+                    <p id="en" >Hello！The purpose of TGSO is to facilitate social and academic dialogue between Taiwanese students in graduate and/or post-graduate professional programs (hereinafter referred to as “Taiwanese graduate students”) in all disciplines of the University of Ottawa!</p>
+                    <p id="fr" >Bonjour！ Le but du TGSO est de faciliter le dialogue social et académique entre les étudiants taïwanais des programmes professionnels de deuxième et troisième cycle (ci-après dénommés «étudiants des cycles supérieurs Taïwanais») dans toutes les disciplines de l'Université d'Ottawa!</p>
+
+                    <hr>
+                    <img class="img-responsive img-border-left" src="img/home/pivik-logo.jpg" alt="">
+
+                    <div class="clearfix"></div>
+                    <p id="en" ></p>
+                    <p id="fr" ></p>
+                </div>
+
+
+                <div class="col-md-6">
+                    <h2 class="intro-text text-center">
+                        <strong>Facebook</strong>
+                    </h2>
+                    <hr>
+
+                    <p id="en">To have the latest news of our club, please follow us on <a href="https://www.facebook.com/groups/tgsottawa" target="_blank">facebook</a>!</p>
+                    <p id="fr">Pour avoir les dernières actualités de notre club, s'il vous plait suivez nous sur <a href="https://www.facebook.com/groups/tgsottawa" target="_blank">facebook</a>!</p>
+
+                    <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjello.aelj%2F&tabs=timeline&width=450&height=750&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="450" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> -->
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=6620847492" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                </div>
+
+                 
+               
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+        
+
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a href="https://www.facebook.com/jello.aelj/" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://twitter.com/jello_aelj?lang=en" class="fa fa-twitter" target="_blank"></a>
+                    <a href="mailto:jello.aelj@gmail.com" class="fa fa-envelope" target="_blank"></a>
+
+                    <p>Copyright &copy; TGSO 2018</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>
+
+        <!-- language script -->
+    <script src="js/languageScript.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
