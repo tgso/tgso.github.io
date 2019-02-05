@@ -1,1 +1,327 @@
-test
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://tgso.github.com/ontologies/mlb.owl#"
+     xml:base="https://tgso.github.com/ontologies/mlb.owl"
+     xmlns:mlb="https://tgso.github.com/ontologies/mlb.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://tgso.github.com/ontologies/mlb.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#coaches -->
+
+    <owl:ObjectProperty rdf:about="https://tgso.github.com/ontologies/mlb.owl#coaches">
+        <rdfs:domain rdf:resource="https://tgso.github.com/ontologies/mlb.owl#Coach"/>
+        <rdfs:range rdf:resource="https://tgso.github.com/ontologies/mlb.owl#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#plays -->
+
+    <owl:ObjectProperty rdf:about="https://tgso.github.com/ontologies/mlb.owl#plays">
+        <rdfs:domain rdf:resource="https://tgso.github.com/ontologies/mlb.owl#Player"/>
+        <rdfs:range rdf:resource="https://tgso.github.com/ontologies/mlb.owl#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#birth_date -->
+
+    <owl:DatatypeProperty rdf:about="https://tgso.github.com/ontologies/mlb.owl#birth_date">
+        <rdfs:domain rdf:resource="https://tgso.github.com/ontologies/mlb.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#birth_place -->
+
+    <owl:DatatypeProperty rdf:about="https://tgso.github.com/ontologies/mlb.owl#birth_place">
+        <rdfs:domain rdf:resource="https://tgso.github.com/ontologies/mlb.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#first_name -->
+
+    <owl:DatatypeProperty rdf:about="https://tgso.github.com/ontologies/mlb.owl#first_name">
+        <rdfs:domain rdf:resource="https://tgso.github.com/ontologies/mlb.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#last_name -->
+
+    <owl:DatatypeProperty rdf:about="https://tgso.github.com/ontologies/mlb.owl#last_name">
+        <rdfs:domain rdf:resource="https://tgso.github.com/ontologies/mlb.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#American_League_Team -->
+
+    <owl:Class rdf:about="https://tgso.github.com/ontologies/mlb.owl#American_League_Team">
+        <rdfs:subClassOf rdf:resource="https://tgso.github.com/ontologies/mlb.owl#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#Coach -->
+
+    <owl:Class rdf:about="https://tgso.github.com/ontologies/mlb.owl#Coach">
+        <rdfs:subClassOf rdf:resource="https://tgso.github.com/ontologies/mlb.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#National_League_Team -->
+
+    <owl:Class rdf:about="https://tgso.github.com/ontologies/mlb.owl#National_League_Team">
+        <rdfs:subClassOf rdf:resource="https://tgso.github.com/ontologies/mlb.owl#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#Person -->
+
+    <owl:Class rdf:about="https://tgso.github.com/ontologies/mlb.owl#Person"/>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#Player -->
+
+    <owl:Class rdf:about="https://tgso.github.com/ontologies/mlb.owl#Player">
+        <rdfs:subClassOf rdf:resource="https://tgso.github.com/ontologies/mlb.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#Team -->
+
+    <owl:Class rdf:about="https://tgso.github.com/ontologies/mlb.owl#Team"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#Boston_Red_Sox -->
+
+    <owl:NamedIndividual rdf:about="https://tgso.github.com/ontologies/mlb.owl#Boston_Red_Sox">
+        <rdf:type rdf:resource="https://tgso.github.com/ontologies/mlb.owl#American_League_Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#Coach1 -->
+
+    <owl:NamedIndividual rdf:about="https://tgso.github.com/ontologies/mlb.owl#Coach1">
+        <coaches rdf:resource="https://tgso.github.com/ontologies/mlb.owl#Miami_Marins"/>
+        <birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1961-04-20T00:00:00</birth_date>
+        <birth_place rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evansville, Indiana, USA</birth_place>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Don</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mattingly</last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#Coach2 -->
+
+    <owl:NamedIndividual rdf:about="https://tgso.github.com/ontologies/mlb.owl#Coach2">
+        <coaches rdf:resource="https://tgso.github.com/ontologies/mlb.owl#Los_Angeles_Dodgers"/>
+        <birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1972-03-31T00:00:00</birth_date>
+        <birth_place rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naha, Okinawa, Japan</birth_place>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dave</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roberts</last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#Coach3 -->
+
+    <owl:NamedIndividual rdf:about="https://tgso.github.com/ontologies/mlb.owl#Coach3">
+        <coaches rdf:resource="https://tgso.github.com/ontologies/mlb.owl#Boston_Red_Sox"/>
+        <birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1975-10-18T00:00:00</birth_date>
+        <birth_place rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caguas, Puerto Rico</birth_place>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alex</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cora</last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#Coach4 -->
+
+    <owl:NamedIndividual rdf:about="https://tgso.github.com/ontologies/mlb.owl#Coach4">
+        <coaches rdf:resource="https://tgso.github.com/ontologies/mlb.owl#New_York_Yankees"/>
+        <birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1973-03-09T00:00:00</birth_date>
+        <birth_place rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La Mesa, California, USA</birth_place>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aaron</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boone</last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#Los_Angeles_Dodgers -->
+
+    <owl:NamedIndividual rdf:about="https://tgso.github.com/ontologies/mlb.owl#Los_Angeles_Dodgers">
+        <rdf:type rdf:resource="https://tgso.github.com/ontologies/mlb.owl#National_League_Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#Miami_Marins -->
+
+    <owl:NamedIndividual rdf:about="https://tgso.github.com/ontologies/mlb.owl#Miami_Marins">
+        <rdf:type rdf:resource="https://tgso.github.com/ontologies/mlb.owl#National_League_Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#New_York_Yankees -->
+
+    <owl:NamedIndividual rdf:about="https://tgso.github.com/ontologies/mlb.owl#New_York_Yankees">
+        <rdf:type rdf:resource="https://tgso.github.com/ontologies/mlb.owl#American_League_Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#Player1 -->
+
+    <owl:NamedIndividual rdf:about="https://tgso.github.com/ontologies/mlb.owl#Player1">
+        <plays rdf:resource="https://tgso.github.com/ontologies/mlb.owl#Miami_Marins"/>
+        <birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1985-07-21T:00:00:00</birth_date>
+        <birth_place rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kaohsiung, Taiwan</birth_place>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chen</first_name>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wei-Yin</first_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#Player2 -->
+
+    <owl:NamedIndividual rdf:about="https://tgso.github.com/ontologies/mlb.owl#Player2">
+        <plays rdf:resource="https://tgso.github.com/ontologies/mlb.owl#New_York_Yankees"/>
+        <birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1988-11-01T00:00:00</birth_date>
+        <birth_place rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hyōgo, Japan</birth_place>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masahiro</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tanaka</last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#Player3 -->
+
+    <owl:NamedIndividual rdf:about="https://tgso.github.com/ontologies/mlb.owl#Player3">
+        <plays rdf:resource="https://tgso.github.com/ontologies/mlb.owl#Boston_Red_Sox"/>
+        <birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1994-02-15T00:00:00</birth_date>
+        <birth_place rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kaohsiung, Taiwan</birth_place>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tzu-Wei</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lin</last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tgso.github.com/ontologies/mlb.owl#Player4 -->
+
+    <owl:NamedIndividual rdf:about="https://tgso.github.com/ontologies/mlb.owl#Player4">
+        <plays rdf:resource="https://tgso.github.com/ontologies/mlb.owl#Los_Angeles_Dodgers"/>
+        <birth_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1988-04-11T00:00:00</birth_date>
+        <birth_place rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osaka, Japan</birth_place>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kenta</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maeda</last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://tgso.github.com/ontologies/mlb.owl#American_League_Team"/>
+            <rdf:Description rdf:about="https://tgso.github.com/ontologies/mlb.owl#Coach"/>
+            <rdf:Description rdf:about="https://tgso.github.com/ontologies/mlb.owl#National_League_Team"/>
+            <rdf:Description rdf:about="https://tgso.github.com/ontologies/mlb.owl#Player"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://tgso.github.com/ontologies/mlb.owl#Boston_Red_Sox"/>
+            <rdf:Description rdf:about="https://tgso.github.com/ontologies/mlb.owl#Miami_Marins"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://tgso.github.com/ontologies/mlb.owl#Boston_Red_Sox"/>
+            <rdf:Description rdf:about="https://tgso.github.com/ontologies/mlb.owl#New_York_Yankees"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://tgso.github.com/ontologies/mlb.owl#Miami_Marins"/>
+            <rdf:Description rdf:about="https://tgso.github.com/ontologies/mlb.owl#New_York_Yankees"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
